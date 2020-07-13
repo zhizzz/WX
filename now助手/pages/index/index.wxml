@@ -1,0 +1,38 @@
+<view class="page-body-wrapper">
+  <image class="bg-img" src='../../images/background.png' mode='widthFix'></image>
+  <view class="one">
+    <!--轮播图-->
+    <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+      <swiper-item>
+        <image src='../../images/1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../images/2.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../images/3.png'></image>
+      </swiper-item>
+    </swiper>
+
+  </view>
+  <view class="btn-area">
+    <navigator class="btn btn1" hover-class="none" url="../home/rili/rili">
+      <image class="icon1" src="../../images/plan.png"></image>
+      <text class="text">查看日历</text>
+    </navigator>
+    <navigator class="btn btn2" hover-class="none" url="../home/huilv/index">
+      <image class="icon1" src="../../images/huilv.png"></image>
+      <text class="text">货币汇率</text>
+    </navigator>
+     <navigator class="btn btn3" hover-class="none" url="../home/weather/weather">
+      <image class="icon1" src="../../images/tianqi.jpg"></image>
+      <text class="text">天气预报</text>
+    </navigator>
+    <navigator class="btn btn3" hover-class="none" url="../home/jizhangben/index">
+      <image class="icon1" src="../../images/jizhang.jpg"></image>
+      <text class="text">记账本</text>
+    </navigator>
+   
+
+  </view>
+</view>

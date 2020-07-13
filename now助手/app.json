@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tab/tab",
+    "pages/home/weather/weather",
+    "pages/home/huilv/index",
+    "pages/studynote/index",
+    "pages/home/rili/rili",
+    "pages/home/jizhangben/index",
+    "pages/home/jizhangben/edit/edit",
+    "pages/studynote/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#959394",
+    "selectedColor": "#959394",
+    "backgroundColor": "#eeeeee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_click.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/studynote/index",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/icon1Selected.png",
+        "text": "笔记编辑"
+      },
+      {
+        "pagePath": "pages/tab/tab",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about_click.png",
+        "text": "关于助手"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

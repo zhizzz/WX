@@ -1,0 +1,44 @@
+<view class="wrap" id="app">
+		<view class="form_group">
+			<input type="text" class="input_txt" placeholder="请输入查询的天气" bindinput="inputText" />
+			<button class="input_sub" bindtap="changeCity">
+				搜 索
+			</button>
+	</view>
+
+	<view class="name">
+		<text wx:if="{{isShow}}">{{city}}市</text>
+		<text wx:else>{{city}}{{district}}</text>
+		<image src="images/dingwei.png" class="img3"></image>
+	</view>
+
+	<view class="text3">{{weatherTodayList.days}}</view>
+	<view class="time">{{updateTime}}{{updateTime2}}更新</view>
+
+	<view class="temperature">{{weatherTodayList.temperature_curr}}</view>
+	<view class="weather-description">
+		<view class="todaytext">{{weatherTodayList.weather}}</view>
+		<view class="weather">湿度:{{weatherTodayList.humidity}}</view>
+		<view class="weather">风向:{{weatherTodayList.wind}}</view>
+	</view>
+
+</view>
+<view class="seven-days">
+	<view class="seven-title">7天预报</view>
+	<view class="scroll-box">
+		<scroll-view scroll-x style="width: 100%;  white-space: nowrap;">
+			<view class="seven-list">
+				<view class="seven-item" wx:for="{{weatherlist}}" wx:key="key">
+					<view>{{item.week}}</view>
+					<view class="text3">{{item.days}}</view>
+					<view>{{item.temp_high}}~{{item.temp_low}}℃</view>
+					<view style="font-size:{{item.weather.length>5?'10px':'14px'}}">{{item.weather}}
+						<image src="{{item.weather_icon}}" class="img1"></image>
+					</view>
+					<view style="font-size:{{item.wind.length>7?'11px':'14px'}}">{{item.wind}}</view>
+					<view style="font-size:{{item.wind.length>8?'12px':'14px'}}">{{item.winp}}</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

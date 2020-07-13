@@ -1,0 +1,4 @@
+<view>
+ <text>  Now助手是一款提供日常生活功能的小程序，致力于帮助同学们解决日常生活中问题和提高生活水平，让生活更简便。</text> 
+</view>
+ <view class="foot"><button open-type='contact' session-from=''>联系作者</button></view>

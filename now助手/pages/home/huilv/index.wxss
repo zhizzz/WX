@@ -1,0 +1,22 @@
+/* pages/home/汇率/index.wxss */page{
+  background: #34495e;
+}
+.list{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #ffffff;
+  height: 60px;
+  margin: 10px auto;
+}
+.currency{
+  margin-left: 25px;
+  margin-right: 20px;
+}
+.inputNumber{
+  text-align: right;
+}
+.curno{
+  margin: 15px;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+	<view class="list">
+  <!--滚动从底部弹起的滚动选择器-->
+    <picker bindchange="scurSelect1" value="{{index1}}" range="{{selectArray}}">
+      <view class="currency">{{leftArray[index1]}}</view>
+    </picker>
+    <input  class="inputNumber" id="input1" value="{{input1}}"  bindinput="exchange1" />
+    <view class="curno">{{rightArray[index1]}}</view>
+  </view>
+  <view class="list">
+    <picker bindchange="scurSelect2" value="{{index2}}" range="{{selectArray}}">
+      <view class="currency">{{leftArray[index2]}}</view>
+    </picker>
+    <input  class="inputNumber" id="input2" value="{{input2}}" bindinput="exchange2"/>
+    <view class="curno">{{rightArray[index2]}}</view>
+  </view> 
+</view>
